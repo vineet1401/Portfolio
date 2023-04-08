@@ -10,18 +10,28 @@
       href="https://fonts.googleapis.com/css2?family=Alkatra&family=Montez&family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra&family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e23084d3ca.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    <div class="Home-Page">
+    <div class="Home-Page" id="Home">
       <!-- <img class="background-homepage-image" src="image/background.png" /> -->
       <div class="NavBar">
-        <a href=""><img src="image/setting.png" alt=""></a>
+        <a href="#Home"><img src="image/hacker1.png" alt="" /></a>
         <div class="Nav-Buttons">
-          <a href="">About</a>
-          <a href="">Profile</a>
-          <a href="">Project</a>
-          <a href="">Contact</a>
+          <a href="#About">About</a>
+          <a href="#Profile">Profile</a>
+          <a href="#Project">Project</a>
+          <a href="#Contact">Contact</a>
         </div>
       </div>
       <div class="Home-Page-Detail">
@@ -36,11 +46,7 @@
       </div>
     </div>
 
-    <!-- ------------------------- -->
-    <hr />
-    <!-- ----------------------------- -->
-
-    <div class="About-me">
+    <div class="About-me" id="About">
       <h1>About Me</h1>
       <img class="Vineet-icon" src="image\informative.png" alt="About-me" />
       <p>
@@ -59,55 +65,10 @@
       </p>
     </div>
 
-    <!-- ----------------------------------- -->
-    <hr />
-    <!-- ------------------------------------- -->
-
     <div class="Skill-page">
       <h1>My Skills</h1>
-      <!-- <div class="Skill-block">
-        <div class="HTML">
-          <img class="html-icon" src="image\setting.png" alt="HTML Icon" />
-          <h1>HTML </h1>
-          <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser</p>
-        </div>
-        <div class="CSS">
-          <img class="css-icon" src="image\setting.png" alt="CSS Icon" />
-          <h1>CSS </h1>
-          <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe how elements should be rendered on screen, on paper, in speech, or on other media.</p>
-        </div>
-        <hr>
-        <div class="JavaScript">
-          <img class="js-icon" src="image\setting.png" alt="Java Script Icon" />
-          <h1>Java Script</h1>
-          <p>JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages.</p>
-        </div>
-        <div class="Python">
-          <img class="python-icon" src="image\setting.png" alt="Python Icon" />
-          <h1>Python</h1>
-          <p>Python is a computer programming language often used to build websites and software, automate tasks, and conduct data analysis. Python is a general-purpose language, meaning it can be used to create a variety of different programs.</p>
-        </div>
-        <hr>
-        <div class="JAVA">
-          <img class="java-icon" src="image\setting.png" alt="JAVA Icon" />
-          <h1>JAVA</h1>
-          <p>Java is a widely used object-oriented programming language and platform independent that runs on billions of devices, including computers, mobile devices, gaming consoles and mostly preferred for development </p>
-        </div>
-        <div class="Cpp">
-          <img class="cpp-icon" src="image\setting.png" alt="Cpp Icon" />
-          <h1>C++</h1>
-          <p>C++ is an object-oriented programming (OOP) language that is viewed by many as the best language for creating large-scale applications. C++ is a superset of the C language and mostly used in complex programming. </p>
-        </div>
-        <hr>
-        <div class="C">
-          <img class="html-icon" src="image\setting.png" alt="HTML Icon" />
-          <h1>C</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium accusamus, possimus error illo nesciunt impedit saepe ducimus quod ab aperiam provident, rem perspiciatis laudantium, suscipit cumque? Corrupti aspernatur voluptas culpa.</p>
-        </div>
-      </div> -->
 
       <div class="Skill-block">
-        <!-- <hr /> -->
         <div class="HTML">
           <img class="html-icon" src="image\html.png" alt="HTML Icon" />
           <h1>HTML</h1>
@@ -119,7 +80,11 @@
           <p>★★★☆☆</p>
         </div>
         <div class="JavaScript">
-          <img class="js-icon" src="image\javascript.png" alt="Java Script Icon" />
+          <img
+            class="js-icon"
+            src="image\javascript.png"
+            alt="Java Script Icon"
+          />
           <h1>Java Script</h1>
           <p>★★★☆☆</p>
         </div>
@@ -147,11 +112,7 @@
       </div>
     </div>
 
-    <!-- ----------------------------- -->
-    <hr />
-    <!-- ------------------------------------- -->
-
-    <div class="Coding-platform">
+    <div class="Coding-platform" id="Profile">
       <div class="Coding-Platform-Blocks">
         <div class="Hacker-Rank">
           <img
@@ -159,11 +120,12 @@
             src="image\hackerrank.png"
             alt="Hacker Rank Icon"
           />
-          <a href="https://www.hackerrank.com/dashboard">Hacker Rank</a>
+          <a href="https://www.hackerrank.com/sakpalvineet1401">Hacker Rank</a>
         </div>
+
         <div class="GitHub">
           <img class="github-icon" src="image\github.png" alt="GitHub Icon" />
-          <a href="https://github.com/">GitHub</a>
+          <a href="https://github.com/vineet1401">GitHub</a>
         </div>
         <div class="CodeChef">
           <img
@@ -171,37 +133,28 @@
             src="image\codechef.png"
             alt="CodeChef Icon"
           />
-          <a href="https://www.codechef.com/learn/dashboard">CodeChef</a>
+          <a href="https://www.codechef.com/users/sakpalvineet14">CodeChef</a>
         </div>
-        <div class="LeetCode">
-          <img
-            class="Leetcode-icon"
-            src="image\leetcode.png"
-            alt="Leetcode Icon"
-          />
-          <a href="https://leetcode.com/problemset/all/">Leet Code</a>
+        <div class="Gfg">
+          <img class="GFG-icon" src="image\gfg.png" alt="GFG Icon" />
+          <a href="https://auth.geeksforgeeks.org/user/sakpalvinopua/practice">Geeks for Geeks</a>
         </div>
       </div>
       <div class="Coding-Platform-Headline">
         <h1>
           <em> CODING <br />PROFILES</em>
         </h1>
-        <img
-          class="hacker-icon"
-          src="image\hacker.png"
-          alt="Hacker Icon"
-        />
+        <img class="hacker-icon" src="image\hacker.png" alt="Hacker Icon" />
       </div>
     </div>
 
-    <!-- ------------------------------- -->
-    <hr>
-    <!-- ---------------------------------- -->
-
-    <div class="Project-Page">
+    <div class="Project-Page" id="Project">
       <div class="My-Project-Headline">
         <h1>
-          <em> MY <br /> PROJECTS</em>
+          <em>
+            MY <br />
+            PROJECTS</em
+          >
         </h1>
         <img
           class="laptop-man-icon"
@@ -216,11 +169,21 @@
             src="image\snake.png"
             alt="Project Icon"
           />
-          <a href="https://github.com/vineet1401/Python_Intermediate_Programs/tree/main/SNAKE%20GAME">Snake Game</a>
+          <a
+            href="https://github.com/vineet1401/Python_Intermediate_Programs/tree/main/SNAKE%20GAME"
+            >Snake Game</a
+          >
         </div>
         <div class="PingPong">
-          <img class="PingPong-icon" src="image\ping-pong.png" alt="Ping Pong Icon" />
-          <a href="https://github.com/vineet1401/Python_Intermediate_Programs/tree/main/PING_PONG">Ping Pong</a>
+          <img
+            class="PingPong-icon"
+            src="image\ping-pong.png"
+            alt="Ping Pong Icon"
+          />
+          <a
+            href="https://github.com/vineet1401/Python_Intermediate_Programs/tree/main/PING_PONG"
+            >Ping Pong</a
+          >
         </div>
         <div class="PasswordManager">
           <img
@@ -228,7 +191,10 @@
             src="image\padlock.png"
             alt="PasswordManager Icon"
           />
-          <a href="https://github.com/vineet1401/Python_Intermediate_Programs/tree/main/PassWord%20Manager">Password Manager</a>
+          <a
+            href="https://github.com/vineet1401/Python_Intermediate_Programs/tree/main/PassWord%20Manager"
+            >Password Manager</a
+          >
         </div>
         <div class="FlashCard">
           <img
@@ -236,7 +202,10 @@
             src="image\flash-card.png"
             alt="FlashCard Icon"
           />
-          <a href="https://github.com/vineet1401/Python_Intermediate_Programs/tree/main/Flash%20Card">Flash Card</a>
+          <a
+            href="https://github.com/vineet1401/Python_Intermediate_Programs/tree/main/Flash%20Card"
+            >Flash Card</a
+          >
         </div>
         <div class="TechTrivia">
           <img
@@ -244,23 +213,67 @@
             src="image\quiz.png"
             alt="TechTrivia Icon"
           />
-          <a href="https://github.com/vineet1401/Python_Intermediate_Programs/tree/main/Tech%20Trivia">Tech Trivia</a>
+          <a
+            href="https://github.com/vineet1401/Python_Intermediate_Programs/tree/main/Tech%20Trivia"
+            >Tech Trivia</a
+          >
         </div>
       </div>
     </div>
 
-    <!-- ------------------------------- -->
-    <hr>
-    <!-- ------------------------ -->
-
     <div class="Contact-Me-Page">
+      <div class="Contact">
+        <h1>
+          Let's get connected <br />
+          Drop down a message for me...
+        </h1>
+
+        <div id="form">
+          <form id="waterform" method="post">
+            <div class="formgroup" id="name-form">
+              <label for="name">Your name*</label>
+              <input type="text" id="name" name="name" />
+            </div>
+
+            <div class="formgroup" id="email-form">
+              <label for="email">Your e-mail*</label>
+              <input type="email" id="email" name="email" />
+            </div>
+
+            <div class="formgroup" id="message-form">
+              <label for="message">Your message</label>
+              <textarea id="message" name="message"></textarea>
+            </div>
+
+            <input type="submit" value="Submit!" />
+          </form>
+        </div>
+      </div>
+
       <div class="Footer">
-        <p><strong>&copy;</strong> 2023 Vineet Sakpal</p>
-        <hr>
+        <p><strong>&copy;</strong> Vineet Sakpal</p>
+        <!-- <hr /> -->
         <div class="Social-Media">
-          <a href="">Linked-In</a>
-          <a href="">Instagram</a>
-          <a href="">Twitter</a>
+          <a href=""
+            ><i
+              class="fa-brands fa-linkedin-in fa-beat fa-2xl"
+              style="color: #ffffff"
+            ></i
+          ></a>
+
+          <a href=""
+            ><i
+              class="fa-brands fa-twitter fa-beat fa-2xl"
+              style="color: #ffffff"
+            ></i
+          ></a>
+
+          <a href=""
+            ><i
+              class="fa-brands fa-instagram fa-beat fa-2xl"
+              style="color: #ffffff"
+            ></i
+          ></a>
         </div>
       </div>
     </div>

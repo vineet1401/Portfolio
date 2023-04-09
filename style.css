@@ -1,3 +1,4 @@
+@media screen and (min-width: 950px){
 * {
   margin: 0px;
 }
@@ -8,6 +9,7 @@
   height: 55px;
   position: fixed;
   background-color: white;
+  z-index: 2;
 }
 .NavBar img {
   height: 50px;
@@ -33,11 +35,10 @@
 }
 
 .Home-Page {
-  height: 99vh;
-  /* height: max-content; */
+  margin-bottom:150px ;
+  height: max-content;
   width: 99vw;
   text-align: center;
-  /* background-color: #f2e9e4; */
   background-color: white;
 }
 
@@ -77,7 +78,7 @@
   color: black;
   text-align: center;
   font-family: "Montez", cursive;
-  font-size: 10vh;
+  font-size: 6rem;
   margin: 10px auto 10px auto;
 }
 
@@ -89,7 +90,6 @@
 }
 /* ==================================================================================== */
 .About-me {
-  /* background-color: #C9ADA7; */
   background-color: #ffffff;
   width: 99vw;
   height: 99vh;
@@ -99,20 +99,19 @@
 .About-me h1 {
   text-align: center;
   color: black;
-  /* font-family: 'Acme', sans-serif; */
   Font-family: Copperplate, Copperplate Gothic Light, fantasy;
   font-size: 4rem;
   font-weight: bolder;
   display: block;
 }
-
+.About-me div{
+  display: flex;
+  align-items: center;
+}
 .Vineet-icon {
-
   margin: 100px 50px;
-  float: left;
-  height: 450px;
-  width: 450px;
-  /* display:flex */
+  height: 30rem;
+  width: 30rem;
 }
 
 .About-me p {
@@ -120,10 +119,10 @@
   margin: 30px auto 10px auto;
   color: black;
   font-family: 'Cinzel', serif;
-  font-size: 3.5vh;
-  display:flex;
+  font-size: 1.5rem;
   font-weight: bolder;
   padding: 40px;
+
 }
 
 hr {
@@ -135,10 +134,7 @@ hr {
 /* ---------------------------------------------------------------------- */
 .Skill-page {
   width: 99vw;
-  /* background-color: #F2E9E4; */
   background-color: rgb(255, 255, 255);
-  /* background-color: white; */
-  color: black;
 }
 .Skill-page h1 {
   Font-family: Copperplate, Copperplate Gothic Light, fantasy;
@@ -153,7 +149,6 @@ hr {
   border-color: black;
   border-style: dotted;
   margin: 50px auto;
-  /* padding: 40px; */
   width: 80vw;
 }
 .Skill-block {
@@ -177,13 +172,16 @@ hr {
 }
 .Skill-block p {
   font-size: 1.8rem;
-  /* width: auto; */
   font-weight: bolder;
   margin: 0px;
 }
 .Skill-block div{
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
-  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);  
+  transition: transform 200ms ease-in-out;
+}
+.Skill-block div:hover{
+  transform: scale(1.5);
 }
 .HTML {
   width: auto;
@@ -198,7 +196,6 @@ hr {
   display: inline-table;
 }
 .JavaScript {
-  /* padding: 20px; */
   width: auto;
   height: 30vh;
   margin: 30px 25px 10px;
@@ -207,7 +204,6 @@ hr {
 }
 
 .Python {
-  /* padding: 20px; */
   width: auto;
   height: 30vh;
   margin: 30px 25px 10px;
@@ -215,7 +211,6 @@ hr {
 }
 
 .JAVA {
-  /* padding: 20px; */
   width: auto;
   height: 30vh;
   margin: 30px 25px 10px;
@@ -223,7 +218,6 @@ hr {
 }
 
 .Cpp {
-  /* padding: 20px; */
   width: auto;
   height: 30vh;
   margin: 30px 25px 10px;
@@ -231,7 +225,6 @@ hr {
 }
 
 .C {
-  /* padding: 20px; */
   width: auto;
   height: 30vh;
   margin: 10px 25px 10px;
@@ -241,40 +234,43 @@ hr {
 /* ---------------------------------------------------------- */
 .Coding-platform {
   width: 99vw;
-  /* background-color: #F2E9E4; */
   background-color: #ffffff;
-  /* background-color: rgb(29, 91, 62); */
   color: black;
   margin-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-right: 0px;
-  display: flex;
+  /* display: flex; */
   text-align: center;
 }
 .Coding-Platform-Blocks {
   width: 50vw;
   margin: 30px auto;
 }
+.Coding-Platform-Blocks a{
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  display: inline-block;
+}
 .Coding-Platform-Blocks div {
   background-color: #ffffff;
-  /* border: 2px solid black; */
+  border-radius: 20px;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
   0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  transition: transform 200ms;
 }
 .Coding-Platform-Blocks div:hover{
   background-color: #514c4c3a;
+  transform: scale(1.1);
 }
 .Coding-Platform-Blocks img {
   width: 200px;
   height: 200px;
 }
-.Coding-Platform-Blocks a {
-  text-decoration: none;
-  color: black;
-  font-size: 2rem;
-  display: block;
+.Profile-Blocks a {
   margin: 20px;
+  padding: 10px;
 }
 
 .Hacker-Rank {
@@ -362,10 +358,12 @@ hr {
   font-size: 2rem;
   display: block;
   margin: 20px;
+  transition: transform 200ms;
 }
 
 .My-Project-Blocks a:hover {
   text-decoration: underline;
+  transform: scale(1.2);
 }
 .Snake-Game {
   width: auto;
@@ -489,6 +487,7 @@ input[type="submit"]:hover{
 	
 }
 label{
+
 	font-size: 1.5em;
 	margin:10px 0px 0px;
 	padding-left: 10px;
@@ -496,3 +495,62 @@ label{
   font-weight: 900;
   font-family: 'Staatliches', cursive;
 }
+}
+
+ @media screen and (min-width: 900px) {
+*{
+  height: fit-content;
+}
+.Nav-Buttons{
+  width: fit-content;
+  margin: 0px;
+}
+.About-me{
+  height: fit-content;
+}
+.About-me div{
+  display: flex;
+}
+.Vineet-icon{
+  display: block;
+  margin: 0px auto;
+}
+.About-me p{
+width: fit-content;
+}
+.Skill-page{
+  height: fit-content;
+}
+.Skill-block div{
+  height: fit-content;
+}
+.Coding-Platform{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.Coding-Platform-Headline{
+  display: flex;
+  width: auto;
+}
+.Coding-Platform-Blocks{
+  display: block;
+  width: 100vw;
+}
+.Coding-Platform-Blocks div{
+  margin: 10px;
+  height: 14vh;
+}
+.Project-Page{
+  display: flex;
+  flex-direction: row;
+}
+.My-Project-Blocks{
+  width: 100vw;
+  margin: auto 10px;
+}
+.My-Project-Blocks div{
+  margin: 10px;
+  height: max-content;
+}
+} 

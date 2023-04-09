@@ -435,10 +435,10 @@ hr {
 
 .Contact-Me-Page h1{
 	font-weight: normal;
-	font-size: 2em;
+	font-size: 2.3rem;
 	font-family: 'Lobster', cursive;
 	margin: 10px auto;
-  text-shadow: 2px 2px #615b5b;
+  text-shadow: 2px 1px #615b5b;
 	margin-top: 30px;
 	color: rgb(0, 0, 0);
 	text-align: center;
@@ -495,7 +495,7 @@ input[type="submit"]:hover{
 }
 label{
 
-	font-size: 1.5em;
+	font-size: 2rem;
 	margin:10px 0px 0px;
 	padding-left: 10px;
   color: #000000;
